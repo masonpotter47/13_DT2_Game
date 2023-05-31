@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://4uw41f8x0fgr"]
+
+[ext_resource type="Texture2D" uid="uid://bs6fun4oroyrt" path="res://Assets/car body copy.png" id="1_vup4b"]
+[ext_resource type="PackedScene" uid="uid://denvru4r4tsvg" path="res://Scenes/wheel.tcsn.tscn" id="1_x82wf"]
+
+[node name="Player" type="RigidBody2D" groups=["player"]]
+
+[node name="PinJoint2D" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("wheel")
+
+[node name="wheel" parent="PinJoint2D" instance=ExtResource("1_x82wf")]
+position = Vector2(-1, 2)
+scale = Vector2(0.25, 0.25)
+mass = 1.06
+
+[node name="wheel2" parent="PinJoint2D" instance=ExtResource("1_x82wf")]
+position = Vector2(2, 2)
+scale = Vector2(0.25, 0.25)
+mass = 1.06
+
+[node name="car" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(0.28125, 0.375)
+texture = ExtResource("1_vup4b")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1, 1.0625)
+polygon = PackedVector2Array(-3, 1.88235, -3, 0, -1, -2, 2, -2, 4, 0, 4, 1.88235, 2, 1.88235)

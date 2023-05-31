@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5tmkqgoluuy5"]
+
+[ext_resource type="Texture2D" uid="uid://nymqwhh1v6cg" path="res://Assets/race start point.jpeg" id="1_jcll8"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Start line" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(192.229, 104)
+scale = Vector2(0.36407, 0.195075)
+texture = ExtResource("1_jcll8")
+
+[node name="Finish Line" type="Sprite2D" parent="."]
+position = Vector2(1113.75, 110.688)
+scale = Vector2(0.324258, 0.203973)
+texture = ExtResource("1_jcll8")
+
+[node name="Area2D" type="Area2D" parent="."]
