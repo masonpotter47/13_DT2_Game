@@ -1,15 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://denvru4r4tsvg"]
+[gd_scene load_steps=2 format=3 uid="uid://denvru4r4tsvg"]
 
-[ext_resource type="Texture2D" uid="uid://cd37tg0tcp37k" path="res://Assets/car wheel copy.png" id="1_wy5tv"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_uec8i"]
-radius = 3.0
+[ext_resource type="Texture2D" uid="uid://dhwk0o5s3bva6" path="res://Assets/wheeeeelllll.png" id="1_hiqi6"]
 
 [node name="wheel" type="RigidBody2D" groups=["player"]]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(7, -5)
-texture = ExtResource("1_wy5tv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_uec8i")
+[node name="Wheeeeelllll" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_hiqi6")

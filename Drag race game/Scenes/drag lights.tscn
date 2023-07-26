@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://048ufq7rtc24"]
+
+[ext_resource type="Texture2D" uid="uid://dao8tujlqje6g" path="res://Assets/drag lights(red+yellow).png" id="1_aqn8m"]
+[ext_resource type="Texture2D" uid="uid://c841vrbjgu8f2" path="res://Assets/drag lights(red).png" id="2_w3l3q"]
+[ext_resource type="Texture2D" uid="uid://mi4flqrraymd" path="res://Assets/drag lights(green).png" id="3_p02te"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pdk2b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aqn8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w3l3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p02te")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(662.75, 1464.5)
+scale = Vector2(85.2333, 97.5667)
+sprite_frames = SubResource("SpriteFrames_pdk2b")
+frame_progress = 0.387199
+speed_scale = 0.15

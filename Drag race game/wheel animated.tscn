@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmcnge1wicum2"]
+
+[ext_resource type="Texture2D" uid="uid://dhwk0o5s3bva6" path="res://Assets/wheeeeelllll.png" id="1_84nws"]
+[ext_resource type="Texture2D" uid="uid://dsn6dqjsveiqy" path="res://Assets/wheel rotated2.png" id="2_wr4es"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cvn43"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_84nws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wr4es")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 4)
+scale = Vector2(1.75, 1.5)
+sprite_frames = SubResource("SpriteFrames_cvn43")
+frame = 1
+frame_progress = 0.853181

@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceecx8ynrcgap"]
+
+[ext_resource type="Script" path="res://Scenes/instructions.gd" id="1_h0565"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_h0565")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 616.0
+offset_top = 54.0
+offset_right = 1174.0
+offset_bottom = 970.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 50
+text = "Instructions and Rules
+
+
+
+
+
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 389.0
+offset_top = 171.0
+offset_right = 1618.0
+offset_bottom = 873.0
+rotation = 0.00233543
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 50
+text = "For player 1 press \"D\" repeatidly to gain speed
+
+For player 2 press \"Right Arrow Key\" repeatidly to gain speed
+
+Both Players must wait until the lights go green
+Failure to comply and player will result in instant disqaulifiction
+
+Whoever hits the finish line first is the winner
+
+
+
+"
+scroll_active = false
+
+[node name="Button" type="Button" parent="."]
+offset_left = 712.0
+offset_top = 892.0
+offset_right = 1183.0
+offset_bottom = 1089.0
+theme_override_font_sizes/font_size = 60
+text = "Back
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
